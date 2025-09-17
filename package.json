@@ -45,6 +45,8 @@
             "--disable-setuid-sandbox"
         ],
         "waitFor": "div#root",
-        "waitTime": 1000
+        "waitTime": 1000,
+        "crawl": false,
+        "include": ["/", "/about", "/contact", "/services", "/questions"]
     }
 }
