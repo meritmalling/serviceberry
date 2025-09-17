@@ -1,7 +1,7 @@
 import ServiceberryLogo from "../assets/images/ServiceberryLogo2.png";
 import Book from "./BookButton";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { FaBars, FaCaretDown } from "react-icons/fa6";
 
@@ -21,6 +21,7 @@ const questions = [
 ];
 
 const Header = () => {
+  const navigate = useNavigate();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [questionsOpen, setQuestionsOpen] = useState(false);
@@ -39,7 +40,7 @@ const Header = () => {
             >
               <button 
                 className="flex items-center gap-1 hover:text-dark-green transition-colors"
-                onClick={() => (window.location.href = '/services')}
+                onClick={() => navigate('/services')}
               >
                 SERVICES <FaCaretDown className="text-sm" />
               </button>
@@ -68,7 +69,7 @@ const Header = () => {
             >
               <button 
                 className="flex items-center gap-1 hover:text-dark-green transition-colors"
-                onClick={() => (window.location.href = '/questions')}
+                onClick={() => navigate('/questions')}
               >
                 QUESTIONS <FaCaretDown className="text-sm" />
               </button>
@@ -107,8 +108,8 @@ const Header = () => {
           <img 
             src={ServiceberryLogo} 
             alt="Serviceberry Logo" 
-            className="w-48 md:w-36" 
-            onClick={() => (window.location.href = '/')}
+            className="w-48 md:w-36 cursor-pointer" 
+            onClick={() => navigate('/')}
           />
           <div className="ml-8 hidden md:block"> 
             <h1 className="text-3xl text-dark-green">Remote & Mobile Notary Services</h1>
