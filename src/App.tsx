@@ -12,7 +12,7 @@ import NotFound from "./pages/404";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename='/serviceberry/'>
       <div className="min-h-screen flex flex-col bg-gradient-to-b from-white to-gray-100 bg-fixed">
         <div className="sticky top-0 z-50 bg-white">
           <Header />

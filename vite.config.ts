@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/serviceberry',
+  base: '/serviceberry/',
   plugins: [react()],
   build: {
     target: 'es2019', // Fixes react-snap SyntaxError (optional chaining)

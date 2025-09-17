@@ -9,7 +9,6 @@
         "postbuild": "react-snap",
         "dev": "vite",
         "preview": "vite preview",
-        "predeploy": "npm run build",
         "deploy": "gh-pages -d dist"
     },
     "dependencies": {
