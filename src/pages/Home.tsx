@@ -3,32 +3,12 @@ import Book from "../components/BookButton";
 import Services from "../components/ServicesButton";
 import Contact from "../components/ContactButton";
 import FAQ from "../components/FAQButton";
-import { Link } from "react-router-dom";
-import { FaCaretRight, FaCarAlt, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import one from "../assets/images/amr-taha-uM53h13ayQ0-unsplash.jpg";
-import two from "../assets/images/brooke-cagle-RnDGGnMEOao-unsplash.jpg";
-import three from "../assets/images/ivan-skorovarov-WpMIsDvjvU4-unsplash.jpg";
-import four from "../assets/images/lewis-keegan-XQaqV5qYcXg-unsplash.jpg";
-import five from "../assets/images/mick-haupt-DgugiZUfH9k-unsplash.jpg";
-import six from "../assets/images/mikhail-pavstyuk-EKy2OTRPXdw-unsplash.jpg";
-import seven from "../assets/images/rendy-novantino-5sKiKDZt_lA-unsplash.jpg";
 import eight from "../assets/images/signature-pro-wB9iWZKwljw-unsplash.jpg";
-import nine from "../assets/images/surface-8HPLpr3hebU-unsplash.jpg";
-import ten from "../assets/images/surface-V_JGp9lnojw-unsplash.jpg";
 import eleven from "../assets/images/thought-catalog-Nv-vx3kUR2A-unsplash.jpg";
-import twelve from "../assets/images/tingey-injury-law-firm-yCdPU73kGSc-unsplash.jpg";
-import thirteen from "../assets/images/toa-heftiba-4xe-yVFJCvw-unsplash.jpg";
-import fourteen from "../assets/images/windows-12mi25fTAmM-unsplash.jpg";
 import fifteen from "../assets/images/windows-hNiNxhUfCfQ-unsplash.jpg";
 import sixteen from "../assets/images/garrett-parker-x7ko46aTUaw-unsplash.jpg";
-import seventeen from "../assets/images/kelly-sikkema-8DEDp6S93Po-unsplash.jpg";
-import { FaShieldHalved, FaHouseChimney, FaPenFancy } from 'react-icons/fa6';
 import { GiQuillInk } from 'react-icons/gi';
-import { RiQuillPenAiLine } from 'react-icons/ri';
-import { ImBubbles3 } from 'react-icons/im';
-import { FaBookOpen } from 'react-icons/fa6';
-import { IoCalendar } from 'react-icons/io5';
-import { useEffect, useState } from 'react';
+
 
 const services = [{
   image: fifteen,
