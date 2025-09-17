@@ -17,10 +17,11 @@ const Contact = () => {
   });
 
   const validateForm = () => {
-    const firstName = form.current?.elements['firstName'].value.trim();
-    const lastName = form.current?.elements['lastName'].value.trim();
-    const email = form.current?.elements['email'].value.trim();
-    const message = form.current?.elements['message'].value.trim();
+    const formEl = form.current;
+    const firstName = (formEl?.elements.namedItem('firstName') as HTMLInputElement | null)?.value.trim() ?? '';
+    const lastName = (formEl?.elements.namedItem('lastName') as HTMLInputElement | null)?.value.trim() ?? '';
+    const email = (formEl?.elements.namedItem('email') as HTMLInputElement | null)?.value.trim() ?? '';
+    const message = (formEl?.elements.namedItem('message') as HTMLTextAreaElement | null)?.value.trim() ?? '';
     const phoneDigits = phone.replace(/\D/g, '');
     const messageWords = message.split(/\s+/).filter(Boolean);
 
@@ -82,7 +83,7 @@ const Contact = () => {
         'KWvcwNWL44MfI-1Am'
       )
       .then(
-        (result: { text: string }) => {
+        () => {
           form.current?.reset();
           setPhone('');
           setErrors({
